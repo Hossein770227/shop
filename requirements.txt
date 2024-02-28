@@ -2,6 +2,7 @@ asgiref==3.7.2
 certifi==2024.2.2
 cffi==1.16.0
 charset-normalizer==3.3.2
+crispy-bootstrap4==2024.1
 cryptography==42.0.5
 defusedxml==0.7.1
 dj-database-url==2.1.0
@@ -9,6 +10,7 @@ dj-email-url==1.0.6
 Django==5.0.2
 django-allauth==0.61.1
 django-cache-url==3.4.5
+django-crispy-forms==2.1
 environs==10.3.0
 idna==3.6
 marshmallow==3.21.0

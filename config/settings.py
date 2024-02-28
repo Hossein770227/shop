@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     # third party apps
     'allauth',
     'allauth.account',
+    'crispy_forms',
+    'crispy_bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -161,3 +163,16 @@ STATIC_FILES_DIRS = [str(BASE_DIR.joinpath('static'))]
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# allauth config 
+ACCOUNT_AUTHENTICATION_METHOD = "username_email"
+ACCOUNT_EMAIL_REQUIRED=True
+
+ACCOUNT_UNIQUE_EMAIL=True
+
+# crispy forms
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# account config
+
+LOGIN_REDIRECT_URL='pages:home'
