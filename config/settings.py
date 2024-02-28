@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
     # local apps
     'pages',
+    'products', 
 
     # third party apps
     'allauth',
