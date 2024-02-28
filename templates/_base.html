@@ -1,5 +1,6 @@
 <!doctype html>
 {% load static %}
+{% load i18n %}
 <html  class="no-js">
 <head>
     <meta charset="utf-8">
@@ -46,22 +47,22 @@
                                     <ul class="mainmenu d-lg-flex jusity-content-end jusity-content-lg-start pt-4">
                                         <li class="mainmenu__item menu-item-has-children active">
                                             <a href="index.html" class="mainmenu__link">
-                                                <span class="mm-text">خانه</span>
+                                                <span class="mm-text">{% trans "home" %}</span>
                                             </a>
                                         </li>
-                                        <li class="mainmenu__item menu-item-has-children">
+                                        {% comment %} <li class="mainmenu__item menu-item-has-children">
                                             <a href="Blog.html" class="mainmenu__link">
                                                 <span class="mm-text">وبلاگ</span>
                                             </a>
-                                        </li>
-                                        <li class="mainmenu__item menu-item-has-children">
+                                        </li> {% endcomment %}
+                                        {% comment %} <li class="mainmenu__item menu-item-has-children">
                                             <a href="#" class="mainmenu__link">
                                                 <span class="mm-text">صفحات</span>
                                             </a>
-                                         </li>
+                                         </li> {% endcomment %}
                                         <li class="mainmenu__item">
                                             <a href="contact-us.html" class="mainmenu__link">
-                                                <span class="mm-text">تماس با ما</span>
+                                                <span class="mm-text"> {% trans "call with us" %}</span>
                                             </a>
                                         </li>
                                     </ul>

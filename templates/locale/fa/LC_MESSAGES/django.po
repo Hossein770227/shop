@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-28 08:35-0800\n"
+"PO-Revision-Date: 2024-02-28 19:44+0330\n"
+"Last-Translator:   <hossein.h.a770227@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: .\_base.html:50
+msgid "home"
+msgstr "خانه "
+
+#: .\_base.html:67
+msgid "call with us"
+msgstr "تماس با ما"
+
+#: .\account\login.html:17 .\account\login.html:32 .\account\login.html:39
+#: .\account\signup.html:38
+msgid "log in"
+msgstr "ورود"
+
+#: .\account\login.html:36 .\account\signup.html:17 .\account\signup.html:32
+#: .\account\signup.html:41
+msgid "sign up"
+msgstr "ثبت نام"
+
+#: .\account\logout.html:17 .\account\logout.html:32
+
+msgid "log ot"
+msgstr "خروج"
+
+#: .\account\logout.html:35
+msgid "? Are you sure to wants to log out "
+msgstr "آیا مطمئن هستید می خواهید خارج شوید ؟"
+
+#: .\account\logout.html:36
+msgid "yes I'm sure "
+msgstr "بله مطمئنم"
+
+#: .\account\logout.html:38
+msgid "come back to home"
+msgstr "بازگشت به صفحه اصلی"
+
+#: .\account\signup.html:36
+msgid "forget password"
+msgstr "فراموشی رمز"

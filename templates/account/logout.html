@@ -2,7 +2,7 @@
 {% load crispy_forms_tags %}
 {% load i18n %}
 
-{% block page_title %}log in{% endblock page_title %}
+{% block page_title %}log out{% endblock page_title %}
 
 {% block content %}
     <body dir="rtl">
@@ -14,7 +14,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="d-flex justify-content-between align-items-center flex-sm-row flex-column">
-                                <h1 class="page-title">{% trans "log in" %} </h1>
+                                <h1 class="page-title">{% trans "log ot" %} </h1>
                             </div>
                         </div>
                     </div>
@@ -29,14 +29,14 @@
                         <div class="row">
                             <div class="col-md-6 mb-sm--50">
                                 <div class="login-box">
-                                    <h3 class="heading__tertiary mb--30">{% trans "log in" %}</h3>
+                                    {% comment %} <h3 class="heading__tertiary mb--30">{% trans "log ot" %}</h3> {% endcomment %}
                                     <form action='' method='POST'>
                                         {% csrf_token %}
-                                        {{form|crispy}}
-                                        <a class="forgot-pass" href="#"> {% trans "sign up" %}  </a>
+                                        <h3> {% trans "? Are you sure to wants to log out " %} </h3>
+                                        <input type="submit" value="{% trans "yes I'm sure " %}" class="btn-submit mt-3">
                                         <div class="d-flex align-items-center mt--20">
+                                            <a class="forgot-pass" href="#"> {% trans "come back to home" %}  </a>
                                             <div class="form__group">
-                                                <input type="submit" value="{% trans "log in" %}" class="btn-submit">
                                             </div>
                                         </div>
                                     </form>

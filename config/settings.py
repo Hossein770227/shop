@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'crispy_forms',
     'crispy_bootstrap4',
+    'rosetta',
 ]
 
 MIDDLEWARE = [
@@ -144,14 +145,24 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGES=(
+    ('en', 'English'),
+    ('fa', 'persion'),
+)
 
-TIME_ZONE = 'UTC'
+LANGUAGE_CODE = 'fa'
+# LANGUAGE_CODE = 'en-us'
+
+TIME_ZONE = 'Asia/Tehran'
+# TIME_ZONE = 'UTC'
+
+USE_L10N = True
 
 USE_I18N = True
 
 USE_TZ = True
 
+LOCALE_PATHS=[BASE_DIR/'templates/locale']
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
@@ -165,10 +176,10 @@ STATIC_FILES_DIRS = [str(BASE_DIR.joinpath('static'))]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # allauth config 
-ACCOUNT_AUTHENTICATION_METHOD = "username_email"
-ACCOUNT_EMAIL_REQUIRED=True
+# ACCOUNT_AUTHENTICATION_METHOD = "email"
+# ACCOUNT_EMAIL_REQUIRED=True
 
-ACCOUNT_UNIQUE_EMAIL=True
+# ACCOUNT_UNIQUE_EMAIL=True
 
 # crispy forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -176,3 +187,4 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 # account config
 
 LOGIN_REDIRECT_URL='pages:home'
+LOGOUT_REDIRECT_URL='pages:home'
