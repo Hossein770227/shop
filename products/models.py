@@ -36,4 +36,4 @@ class Comment(models.Model):
     date_time_created = models.DateTimeField(auto_now_add = True, verbose_name=_(' date time created'))
     date_time_modified = models.DateTimeField(auto_now= True)
     active = models.BooleanField(default= True)
-    stars = models.CharField(choices=STARS_CHOICES, max_length=15,verbose_name=_('date time modified'))
+    stars = models.CharField(choices=STARS_CHOICES, max_length=15,verbose_name=_('your score'))

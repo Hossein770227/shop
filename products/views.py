@@ -3,6 +3,7 @@ from django.views import generic
 
 
 from .models import Product, Comment
+from .fomrs import CommentForm
 
 class ProductListView(generic.ListView):
     model = Product
@@ -18,4 +19,15 @@ class ProductListView(generic.ListView):
 def product_detail_view(request, pk):
     product = get_object_or_404(Product, pk=pk)
     comments = product.comments.all().filter(active= True)
-    return render(request, 'products/product_detail.html',{'product':product, 'comments':comments} )
+    if request.method == 'POST':
+        comment_form=CommentForm(request.POST)
+        if comment_form.is_valid():
+            new_comment=comment_form.save(commit= False)
+            new_comment.user= request.user
+            new_comment.product= product
+            new_comment.save()
+            comment_form = CommentForm()
+    else:
+        comment_form = CommentForm()
+        
+    return render(request, 'products/product_detail.html',{'product':product, 'comments':comments, 'comment_form':comment_form} )
