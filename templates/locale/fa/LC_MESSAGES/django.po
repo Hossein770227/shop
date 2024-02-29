@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-28 08:35-0800\n"
-"PO-Revision-Date: 2024-02-28 19:44+0330\n"
+"POT-Creation-Date: 2024-02-29 09:59-0800\n"
+"PO-Revision-Date: 2024-02-29 21:30+0330\n"
 "Last-Translator:   <hossein.h.a770227@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -26,33 +26,46 @@ msgstr "خانه "
 msgid "call with us"
 msgstr "تماس با ما"
 
-#: .\account\login.html:17 .\account\login.html:32 .\account\login.html:39
-#: .\account\signup.html:38
+#: .\_base.html:94
+#| msgid "log ot"
+msgid "log out"
+msgstr "خروج"
+
+#: .\_base.html:97
+msgid "profile"
+msgstr "پروفایل"
+
+#: .\_base.html:101 .\account\login.html:17 .\account\login.html:32
+#: .\account\login.html:39 .\account\signup.html:37
 msgid "log in"
 msgstr "ورود"
 
-#: .\account\login.html:36 .\account\signup.html:17 .\account\signup.html:32
-#: .\account\signup.html:41
+#: .\_base.html:104
+#| msgid "sign up"
+msgid "signup"
+msgstr "ثبت نام"
+
+#: .\account\login.html:36 .\account\signup.html:17 .\account\signup.html:31
+#: .\account\signup.html:40
 msgid "sign up"
 msgstr "ثبت نام"
 
-#: .\account\logout.html:17 .\account\logout.html:32
-
+#: .\account\logout.html:17
 msgid "log ot"
 msgstr "خروج"
 
-#: .\account\logout.html:35
+#: .\account\logout.html:36
 msgid "? Are you sure to wants to log out "
 msgstr "آیا مطمئن هستید می خواهید خارج شوید ؟"
 
-#: .\account\logout.html:36
+#: .\account\logout.html:37
 msgid "yes I'm sure "
 msgstr "بله مطمئنم"
 
-#: .\account\logout.html:38
+#: .\account\logout.html:39
 msgid "come back to home"
 msgstr "بازگشت به صفحه اصلی"
 
-#: .\account\signup.html:36
+#: .\account\signup.html:35
 msgid "forget password"
 msgstr "فراموشی رمز"

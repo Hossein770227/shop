@@ -21,7 +21,6 @@
                 </div>
             </div>
             <!-- Breadcrumb area End -->
-
             <!-- Main Content Wrapper Start -->
             <div class="main-content-wrapper">
                 <div class="page-content-inner pt--75 pb--80">
@@ -35,14 +34,13 @@
                                         {{form|crispy}}
                                         <a class="forgot-pass" href="#"> {% trans "forget password" %}</a>
                                         <span>|</span>
-                                        <a class="forgot-pass" href="#">{% trans "log in" %}   </a>
+                                        <a class="forgot-pass" href="{% url "account_login" %}">{% trans "log in" %}   </a>
                                         <div class="d-flex align-items-center mt--20">
                                             <div class="form__group">
                                                 <input type="submit" value="{% trans "sign up" %}" class="btn-submit">
                                             </div>
                                         </div>
                                     </form>
-
                                 </div>
                             </div>
                         </div>
@@ -78,7 +76,6 @@
                 </div>
             </footer>
             <!-- Footer End-->
-
             <!-- Search form Popup Start -->
             <div class="searchform__popup" id="searchForm">
                 <a href="#" class="btn-close"><i class="flaticon flaticon-cross"></i></a>
@@ -91,7 +88,6 @@
                 </div>
             </div>
             <!-- Search form Popup End -->
-
             <!-- Mini Cart Start -->
             <aside class="mini-cart" id="miniCart">
                 <div class="mini-cart-wrapper">
