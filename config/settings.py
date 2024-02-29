@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
 
     # local apps
     'pages',
@@ -170,6 +171,10 @@ LOCALE_PATHS=[BASE_DIR/'templates/locale']
 
 STATIC_URL = '/static/'
 STATIC_FILES_DIRS = [str(BASE_DIR.joinpath('static'))]
+
+# media config 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
