@@ -43,7 +43,9 @@
                                                                 </a>
                                                             </div>
                                                         </div>
-                                                        <span class="product-badge"> {% trans "> Special discount" %}</span>
+                                                        {% if product.price_with_discount %}
+                                                            <span class="product-badge"> {% trans "> Special discount" %}</span>
+                                                        {% endif %}
                                                     </figure>
                                                     <div class="product-info">
                                                         <h3 class="product-title h6 mb--15">
