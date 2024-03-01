@@ -19,12 +19,15 @@ class Cart:
 
         if product_id not in self.cart:
             self.cart[product_id]={'quantity':0}
+            messages.success(self.request, _('your product successfully added to cart'))
 
 
         if replace_current_quantity:
             self.cart[product_id]['quantity'] =quantity
         else:
             self.cart[product_id]['quantity'] +=quantity
+            messages.success(self.request, _('your product successfully added to cart'))
+        
 
         self.save()
     
