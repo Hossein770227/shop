@@ -1,6 +1,8 @@
 {% extends "_base.html" %}
 {% load i18n %}
 {% load crispy_forms_tags %}
+{% load persion_translate %}
+{% load humanize %}
 {% load jalali_tags %}
 
 {% block page_title %}product details{% endblock page_title %}
@@ -36,10 +38,10 @@
                                {{product.short_description}}
                             </p>
                             <div class="my-5 py-5 product-price-wrapper mb--25">
-                                <span class="money text-success">{{product.price}} {% trans "$" %}</span>
+                                <span class="money text-success">{{product.price|intcomma:False|persion_number}} {% trans "$" %}</span>
                                 {% if product.price_with_discount %}
                                     <span class="price-separator">-</span>
-                                    <span class="money old-price text-danger">{{product.price_with_discount}} {% trans "$" %}</span>
+                                    <span class="money old-price text-danger">{{product.price_with_discount|intcomma:False|persion_number}} {% trans "$" %}</span>
                                 {% endif %}
                             </div>
                             <div class="product-action d-flex align-items-sm-center align-content-center mb--30">

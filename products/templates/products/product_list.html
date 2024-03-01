@@ -1,6 +1,7 @@
 {% extends "_base.html" %}
  {% load i18n %}
  {% load humanize %}
+ {% load persion_translate %}
 {% block page_title %}{% endblock page_title %}
 
 
@@ -53,11 +54,11 @@
                                                             <a href="{{product.get_absolute_url}}">{{product.title}} </a>
                                                         </h3>
                                                         <div class="product-price-wrapper mb--30">
-                                                            <span class="money text-success">{{product.price|intcomma:False}} {% trans "$" %}</span>
+                                                            <span class="money text-success">{{product.price|intcomma:False|persion_number}} {% trans "$" %}</span>
                                                             {% if product.price_with_discount %}
                                                                 <span class="money-separator">-</span>
                                                                 <span class="old-price text-danger">
-                                                                    <span class="money text-danger">{{product.price_with_discount|intcomma:False}} {% trans "$" %}</span>
+                                                                    <span class="money text-danger">{{product.price_with_discount|intcomma:False|persion_number}} {% trans "$" %}</span>
                                                                 </span>
                                                             {% endif %}
                                                         </div>
