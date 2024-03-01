@@ -43,9 +43,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.humanize',
 
+    # jalali date
+    'jalali_date',
+
     # local apps
     'pages',
     'products', 
+    'translate',
 
     # third party apps
     'allauth',

@@ -1,6 +1,7 @@
 {% extends "_base.html" %}
 {% load i18n %}
 {% load crispy_forms_tags %}
+{% load jalali_tags %}
 
 {% block page_title %}product details{% endblock page_title %}
 
@@ -117,12 +118,12 @@
                                                     <div class="review__container">
                                                         <div class="review__text">
                                                             <div class="d-flex flex-sm-row flex-row">
-                                                                <img src="assets/img/others/comment-1.jpg" alt="Review Avatar" class="review__avatar">
+                                                                <img src="assets/img/others/comment-1.jpg" alt="" class="review__avatar">
                                                                 <div>
                                                                     <div class="review__meta">
                                                                         <strong class="review__author px-4">{{comment.user.username}} </strong>
                                                                         <span class="review__dash">-</span>
-                                                                        <span class="review__published-date">{{comment.date_time_created}}</span>
+                                                                        <span class="review__published-date">{{comment.date_time_created|to_jalali:'%Y/%B/%d'}}</span>
                                                                     </div>
                                                                     <div class="product-rating">
                                                                         <div class="m-0 star-rating star-five">
