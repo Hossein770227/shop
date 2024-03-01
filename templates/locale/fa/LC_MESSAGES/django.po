@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-29 09:59-0800\n"
-"PO-Revision-Date: 2024-02-29 21:30+0330\n"
+"POT-Creation-Date: 2024-03-01 07:38-0800\n"
+"PO-Revision-Date: 2024-03-01 19:09+0330\n"
 "Last-Translator:   <hossein.h.a770227@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,12 +22,11 @@ msgstr ""
 msgid "home"
 msgstr "خانه "
 
-#: .\_base.html:67
+#: .\_base.html:67 .\footer.html:18
 msgid "call with us"
 msgstr "تماس با ما"
 
 #: .\_base.html:94
-#| msgid "log ot"
 msgid "log out"
 msgstr "خروج"
 
@@ -36,17 +35,20 @@ msgid "profile"
 msgstr "پروفایل"
 
 #: .\_base.html:101 .\account\login.html:17 .\account\login.html:32
-#: .\account\login.html:39 .\account\signup.html:37
+#: .\account\login.html:41 .\account\signup.html:36
 msgid "log in"
 msgstr "ورود"
 
 #: .\_base.html:104
-#| msgid "sign up"
 msgid "signup"
 msgstr "ثبت نام"
 
-#: .\account\login.html:36 .\account\signup.html:17 .\account\signup.html:31
-#: .\account\signup.html:40
+#: .\account\login.html:36
+msgid "forget password"
+msgstr "فراموشی رمز"
+
+#: .\account\login.html:38 .\account\signup.html:17 .\account\signup.html:31
+#: .\account\signup.html:39
 msgid "sign up"
 msgstr "ثبت نام"
 
@@ -66,6 +68,10 @@ msgstr "بله مطمئنم"
 msgid "come back to home"
 msgstr "بازگشت به صفحه اصلی"
 
-#: .\account\signup.html:35
-msgid "forget password"
-msgstr "فراموشی رمز"
+#: .\footer.html:16
+msgid "about us"
+msgstr "درباره ما "
+
+#: .\footer.html:17
+msgid "Terms and Conditions"
+msgstr "قوانین و مقررات"
