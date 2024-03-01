@@ -2,11 +2,12 @@ from django.db import models
 from django.urls import reverse
 from django.contrib.auth import get_user_model
 from django.utils.translation import gettext_lazy as _
+from ckeditor.fields import RichTextField
 
 
 class Product(models.Model):
     title = models.CharField(max_length= 150)
-    description = models.TextField()
+    description = RichTextField()
     short_description = models.CharField(max_length= 700, blank= True)
     price = models.PositiveIntegerField(default= 0)
     image = models.ImageField(upload_to='covers/', blank= True)
