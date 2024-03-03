@@ -52,7 +52,7 @@
                                                     </td>
                                                     <td class="product-name wide-column">
                                                         <h3>
-                                                            <a href="product-details.html"> {{item.product_obj.title}}</a>
+                                                            <a href="{{item.product_obj.get_absolute_url}}"> {{item.product_obj.title}}</a>
                                                         </h3>
                                                     </td>
                                                     <td class="product-price">
@@ -84,10 +84,14 @@
                         </div>
                         <div class="row no-gutters border-top pt--20 mt--20">
                             <div class="col-sm-6 text-sm-right">
-                                <button type="submit" class="cart-form__btn">خالی کردن سبد خرید</button>
+                            {% if cart %}
+                                <a href='{% url "cart:cart_clear" %}'>{% trans "clear cart" %}</a>
+                            {% else %}
+                                <p>{% trans "cart is Empty! please add some product to the cart " %}</p>
+                                <a href='{% url "product:product_list" %}'>{% trans "Go shoping" %} </a>
+                            {% endif %}
                             </div>
                         </div>
-                       
                     </div>
                     <div class="col-lg-4">
                         <div class="cart-collaterals">
