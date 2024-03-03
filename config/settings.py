@@ -199,5 +199,5 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # account config
 
-LOGIN_REDIRECT_URL='pages:home'
-LOGOUT_REDIRECT_URL='pages:home'
+LOGIN_REDIRECT_URL='product:product_list'
+LOGOUT_REDIRECT_URL='product:product_list'

@@ -36,10 +36,14 @@
                     <span>جمع کل</span>
                     <span class="ammount">{{cart.get_total_price|persion_number|intcomma:False}} {% trans "$" %}</span>
                 </div>
-                <div class="mini-cart__buttons">
-                    <a href="{% url "cart:cart_detail" %}" class="btn btn-fullwidth btn-bg-sand mb--20">{% trans "see cart" %} </a>
-                    <a href="checkout.html" class="btn btn-fullwidth btn-bg-sand">{% trans "pay" %}</a>
-                </div>
+                {% if cart %}
+                    <div class="mini-cart__buttons">
+                        <a href="{% url "cart:cart_detail" %}" class="btn btn-fullwidth btn-bg-sand mb--20">{% trans "see cart" %} </a>
+                        <a href="checkout.html" class="btn btn-fullwidth btn-bg-sand">{% trans "pay" %}</a>
+                    </div>
+                    {% else %}
+                    <p>{% trans "your cart is Empty" %}</p>
+                {% endif %}
             </div>
         </div>
     </div>
