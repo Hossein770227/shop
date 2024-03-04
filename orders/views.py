@@ -1,10 +1,12 @@
 from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
 
 from cart.cart import Cart
 from .forms import OrderForm
 from .models import Order, OrderItem
 
 
+@login_required
 def order_create_view(request):
     order_form = OrderForm()
     cart=Cart(request)
@@ -17,7 +19,7 @@ def order_create_view(request):
         if order_form.is_valid():
             order_obj=order_form.save(commit=False)
             order_obj.user = request.user
-            order_obj.sava()
+            order_obj.save()
 
             for item in cart:
                 product = item['product_obj']
