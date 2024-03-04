@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth import get_user_model
+from phonenumber_field.modelfields import PhoneNumberField
 
 
 
@@ -9,7 +10,7 @@ class Order(models.Model):
 
     first_name = models.CharField(max_length=100)
     last_name =models.CharField(max_length=100)
-    phone = models.CharField(max_length=15)
+    phone = PhoneNumberField(blank=True)
     adress = models.CharField(max_length=700)
     order_notes = models.TextField(blank= True)
 

@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'crispy_bootstrap4',
     'rosetta',
     'ckeditor',
+    "phonenumber_field",
 ]
 
 MIDDLEWARE = [
