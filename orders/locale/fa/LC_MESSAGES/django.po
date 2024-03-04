@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-04 04:39-0800\n"
+"PO-Revision-Date: 2024-03-04 16:11+0330\n"
+"Last-Translator:   <hossein.h.a770227@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: .\templates\orders\order_create.html:17
+msgid "order"
+msgstr "سفارش"
+
+#: .\templates\orders\order_create.html:34
+msgid "description order"
+msgstr "جزئیات محصول"
+
+#: .\templates\orders\order_create.html:78
+msgid "your order"
+msgstr "سفارش شما"
+
+#: .\templates\orders\order_create.html:94
+#: .\templates\orders\order_create.html:101
+msgid "$"
+msgstr "تومان"
+
+#: .\templates\orders\order_create.html:100
+msgid "total"
+msgstr "مجموع"
+
+#: .\templates\orders\order_create.html:107
+msgid "Payment Method"
+msgstr "روش پرداخت"
+
+#: .\templates\orders\order_create.html:112
+msgid "Zarin Pal online portal"
+msgstr "درگاه آنلاین زرین پال"
