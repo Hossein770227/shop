@@ -34,32 +34,32 @@
                             <h2>{% trans "description order" %} </h2>
                         </div>
                         <div class="checkout-form">
-                            <form action="{% url "order:order_create" %}" method='POST' class="form form--checkout">
+                            <form action="" method='POST' class="form form--checkout">
                                 {% csrf_token %}
-                                {% if forms.errors %}
+                                {% if form.errors %}
                                     <div class= 'alert alert-danger'>
-                                        {{forms.errors}}
+                                        {{form.errors}}
                                     </div>
                                 {% endif %}
                                 <div class="form-row mb--20">
                                     <div class="form__group col-md-6 mb-sm--30">
-                                        <label for="billing_fname" class="form__label form__label--2">نام  <span class="required">*</span></label>
+                                        <label for="billing_fname" class="form__label form__label--2">{% trans "first name" %}  <span class="required">*</span></label>
                                         <input type="text" name="first_name" id="billing_fname" class="form__input form__input--2">
                                     </div>
                                     <div class="form__group col-md-6">
-                                        <label for="billing_lname" class="form__label form__label--2">نام خانوادگی  <span class="required">*</span></label>
+                                        <label for="billing_lname" class="form__label form__label--2">{% trans "last name" %}   <span class="required">*</span></label>
                                         <input type="text" name="last_name" id="billing_lname" class="form__input form__input--2">
                                     </div>
                                 </div>
                                 <div class="form-row mb--20">
                                     <div class="form__group col-12">
-                                        <label for="billing_company" class="form__label form__label--2">آدرس</label>
+                                        <label for="billing_company" class="form__label form__label--2">{% trans "adress" %}<span class="required">*</label>
                                         <input type="text" name="adress" id="billing_company" class="form__input form__input--2">
                                     </div>
                                 </div>
                                 <div class="form-row mb--20">
                                     <div class="form__group col-12">
-                                        <label for="billing_phone" class="form__label form__label--2">شماره همراه <span class="required">*</span></label>
+                                        <label for="billing_phone" class="form__label form__label--2">{% trans "phone number " %}  <span class="required">*</span></label>
                                         <input type="text" name="phone" id="billing_phone" class="form__input form__input--2">
                                     </div>
                                 </div>
@@ -71,7 +71,7 @@
                                 </div> {% endcomment %}
                                 <div class="form-row">
                                     <div class="form__group col-12">
-                                        <label for="orderNotes" class="form__label form__label--2">یادداشت شما</label>
+                                        <label for="orderNotes" class="form__label form__label--2"> {% trans "your notes" %}</label>
                                         <textarea class="form__input form__input--2 form__input--textarea" id="orderNotes" name="order_notes" placeholder="اگر یادداشتی دارید در اینجا وارد کنید. در غیر این صورت این مکان را خالی بگذارید"></textarea>
                                     </div>
                                 </div>
@@ -88,8 +88,8 @@
                                 <table class="table order-table order-table-2">
                                     <thead>
                                         <tr>
-                                            <th>محصول</th>
-                                            <th class="text-right">قیمت نهایی</th>
+                                            <th>{% trans "product" %}</th>
+                                            <th class="text-right">{% trans "final price" %} </th>
                                         </tr>
                                     </thead>
                                     <tbody>

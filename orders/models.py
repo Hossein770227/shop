@@ -1,6 +1,11 @@
 from django.db import models
 from django.contrib.auth import get_user_model
+from django.utils.translation import gettext_lazy as _
+
+
+
 from phonenumber_field.modelfields import PhoneNumberField
+
 
 
 
@@ -8,10 +13,10 @@ class Order(models.Model):
     user = models.ForeignKey(get_user_model(), on_delete= models.CASCADE)
     is_paid = models.BooleanField(default=False)
 
-    first_name = models.CharField(max_length=100)
-    last_name =models.CharField(max_length=100)
-    phone = PhoneNumberField(blank=True)
-    adress = models.CharField(max_length=700)
+    first_name = models.CharField(max_length=100, verbose_name= _('first name'))
+    last_name =models.CharField(max_length=100,verbose_name= _('last name'))
+    phone = PhoneNumberField(blank=True,verbose_name= _('phone number'))
+    adress = models.CharField(max_length=700,verbose_name= _('adress'))
     order_notes = models.TextField(blank= True)
 
     date_time_created = models.DateTimeField(auto_now_add= True)

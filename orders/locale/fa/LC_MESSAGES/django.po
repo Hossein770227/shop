@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 04:39-0800\n"
+"POT-Creation-Date: 2024-03-04 11:37-0800\n"
 "PO-Revision-Date: 2024-03-04 16:11+0330\n"
 "Last-Translator:   <hossein.h.a770227@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +18,22 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
+#: .\models.py:16 .\templates\orders\order_create.html:46
+msgid "first name"
+msgstr ""
+
+#: .\models.py:17 .\templates\orders\order_create.html:50
+msgid "last name"
+msgstr ""
+
+#: .\models.py:18
+msgid "phone number"
+msgstr ""
+
+#: .\models.py:19 .\templates\orders\order_create.html:56
+msgid "adress"
+msgstr ""
+
 #: .\templates\orders\order_create.html:17
 msgid "order"
 msgstr "سفارش"
@@ -26,23 +42,45 @@ msgstr "سفارش"
 msgid "description order"
 msgstr "جزئیات محصول"
 
-#: .\templates\orders\order_create.html:78
+#: .\templates\orders\order_create.html:62
+msgid "phone number "
+msgstr ""
+
+#: .\templates\orders\order_create.html:75
+#, fuzzy
+#| msgid "your order"
+msgid "your notes"
+msgstr "سفارش شما"
+
+#: .\templates\orders\order_create.html:79
+msgid "submit"
+msgstr ""
+
+#: .\templates\orders\order_create.html:86
 msgid "your order"
 msgstr "سفارش شما"
 
-#: .\templates\orders\order_create.html:94
-#: .\templates\orders\order_create.html:101
+#: .\templates\orders\order_create.html:92
+msgid "product"
+msgstr ""
+
+#: .\templates\orders\order_create.html:93
+msgid "final price"
+msgstr ""
+
+#: .\templates\orders\order_create.html:102
+#: .\templates\orders\order_create.html:109
 msgid "$"
 msgstr "تومان"
 
-#: .\templates\orders\order_create.html:100
+#: .\templates\orders\order_create.html:108
 msgid "total"
 msgstr "مجموع"
 
-#: .\templates\orders\order_create.html:107
+#: .\templates\orders\order_create.html:115
 msgid "Payment Method"
 msgstr "روش پرداخت"
 
-#: .\templates\orders\order_create.html:112
+#: .\templates\orders\order_create.html:120
 msgid "Zarin Pal online portal"
 msgstr "درگاه آنلاین زرین پال"

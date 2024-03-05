@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'translate',
     'cart',
     'orders',
+    'payments',
 
     # third party apps
     'allauth',
