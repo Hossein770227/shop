@@ -38,5 +38,5 @@ def order_create_view(request):
             request.user.save()
 
             request.session['order_obj']= order_obj.id
-            return redirect('product:product_list')
+            return redirect('payment:payment_process')
     return render(request, 'orders/order_create.html', {'form':order_form})

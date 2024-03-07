@@ -61,7 +61,7 @@ INSTALLED_APPS = [
     'crispy_bootstrap4',
     'rosetta',
     'ckeditor',
-    "phonenumber_field",
+   
 ]
 
 MIDDLEWARE = [
@@ -204,3 +204,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL='product:product_list'
 LOGOUT_REDIRECT_URL='product:product_list'
+
+# zarinpal config 
+
+ZARINPAL_MERCHANT_ID = env("DJANGO_ZARINPAL_MERCHANT_ID")
